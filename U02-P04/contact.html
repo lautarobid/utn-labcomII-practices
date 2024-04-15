@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Peruana</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <h1>Comida Peruana</h1>
+        <img src="Img/Bandera.peru.png" width="120" height="90" title="Bandera Peruana">
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Información de contacto</h2>
+                <p>Encuentra nuestra ubicación en el mapa:</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0!2d-60.643819!3d-32.9545032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sZeballos%201341%2C%20Rosario%2C%20Santa%20Fe!5e0!3m2!1sen!2sar!4v1649297428886!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+            <section>
+                <h2>Formulario de contacto</h2>
+                <form action="#" method="POST">
+                    <table>
+                        <tr>
+                            <td><label for="nombre">Nombre:</label></td>
+                            <td><input type="text" id="nombre" name="nombre" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="edad">Edad:</label></td>
+                            <td><input type="number" id="edad" name="edad"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="color">Color preferido:</label></td>
+                            <td><input type="color" id="color" name="color"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="comentario">Comentario:</label></td>
+                            <td><textarea id="comentario" name="comentario" required minlength="10"></textarea></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </main>
+        <div class="right">
+            <h2>Nuestro dueño</h2>
+            <p>Soy Alberto, creador de nuestras exquisiteces</p>
+            <img src="Img/peruano.jpg" width="120" height="90" title="Peruano">
+        </div>
+    </div>
+    <footer>
+        <p>© derecho de autor labcomII.com</p>
+    </footer>
+</body>
+</html>
