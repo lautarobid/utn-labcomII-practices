@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil </title>
+</head>
+<body>
+    <h1>Mi Perfil</h1>
+    
+    <form action="procesar_perfil.php" method="POST">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="rol">Rol:</label>
+            <input type="text" id="rol" name="rol" value="ESTUDIANTE" readonly><br><br>
+            
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required><br><br>
+            
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select id="nacionalidad" name="nacionalidad">
+                <option value="argentina">Argentina</option>
+                <option value="chilena">Chilena</option>
+                <option value="colombiana">Colombiana</option>
+                <option value="mexicana">Mexicana</option>
+                <option value="española">Española</option>
+            </select><br><br>
+            
+            <label for="condicion_laboral">Condición Laboral:</label>
+            <select id="condicion_laboral" name="condicion_laboral">
+                <option value="desempleado">Desempleado</option>
+                <option value="busqueda_laboral">Estudiante</option>
+                <option value="trabajo_part_time">Empleado/a</option>
+                <option value="trabajo_full_time">Independiente</option>
+            </select><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Gustos Personales</legend>
+            <label for="gustos_musicales">Gustos Musicales:</label>
+            <input type="text" id="gustos_musicales" name="gustos_musicales"><br><br>
+            
+            <label for="comidas_preferidas">Comidas Preferidas:</label>
+            <select id="comidas_preferidas" name="comidas_preferidas" multiple>
+                <option value="pizza">Pizza</option>
+                <option value="hamburguesa">Hamburguesa</option>
+                <option value="sushi">Sushi</option>
+                <option value="pasta">Pasta</option>
+                <option value="ensalada">Ensalada</option>
+            </select><br><br>
+        </fieldset>
+        
+        <input type="submit" value="Guardar Perfil">
+        
+        <input type="checkbox" id="recordar_datos" name="recordar_datos">
+        <label for="recordar_datos">Recordar mis datos</label>
+    </form>
+</body>
+</html>
